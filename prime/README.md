@@ -6,7 +6,7 @@ Prime number generator.
 
 Initialize the generator.
 
-```golang
+```go
 package main
 import(
   "fmt"

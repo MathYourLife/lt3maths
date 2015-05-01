@@ -6,7 +6,7 @@ Some golang packages to aid in maths exploration.
 
 ## prime - Prime Number Generator
 
-```golang
+```go
 package main
 import(
   "fmt"
