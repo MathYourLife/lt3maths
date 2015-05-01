@@ -7,21 +7,21 @@ Prime number generator.
 Initialize the generator.
 
 ```golang
-p := NewPrimeGenerator()
-```
-
-Make some primes
-
-```golang
-for i = 0; i < 10; i++ {
-  fmt.Println(p.Next())
+package main
+import(
+  "fmt"
+  "github.com/mathyourlife/lt3maths/prime"
+)
+func main () {
+  // Initialize the generator
+  p := prime.NewPrimeGenerator()
+  // Generate 10 primes
+  for j := 0; j < 10; j++ {
+    p.Next()
+  }
+  // Show the current list of primes
+  fmt.Println(p.Primes)
 }
-```
-
-Show the current list of primes
-
-```golang
-fmt.Println(p.Primes)
 ```
 
 ## Benchmarking

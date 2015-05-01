@@ -70,4 +70,3 @@ func Benchmark100000Primes(b *testing.B) {
 		}
 	}
 }
-
