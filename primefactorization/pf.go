@@ -1,7 +1,7 @@
 package primefactorization
 
 import (
-  "github.com/mathyourlife/lt3maths/prime"
+	"github.com/mathyourlife/lt3maths/prime"
 )
 
 type PrimeFactorization struct {

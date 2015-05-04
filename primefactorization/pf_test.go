@@ -22,8 +22,8 @@ func TestPrimeFactorization(t *testing.T) {
 
 	result := pf.Of(12)
 	expected := map[uint64]uint64{
-		2:2,
-		3:1,
+		2: 2,
+		3: 1,
 	}
 	if !match(result, expected) {
 		t.Errorf("%v != %v", expected, result)
@@ -31,9 +31,9 @@ func TestPrimeFactorization(t *testing.T) {
 
 	result = pf.Of(450)
 	expected = map[uint64]uint64{
-		2:1,
-		3:2,
-		5:2,
+		2: 1,
+		3: 2,
+		5: 2,
 	}
 	if !match(result, expected) {
 		t.Errorf("%v != %v", expected, result)
@@ -41,7 +41,7 @@ func TestPrimeFactorization(t *testing.T) {
 
 	result = pf.Of(9941)
 	expected = map[uint64]uint64{
-		9941:1,
+		9941: 1,
 	}
 	if !match(result, expected) {
 		t.Errorf("%v != %v", expected, result)
