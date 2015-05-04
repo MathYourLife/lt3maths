@@ -23,3 +23,19 @@ func main () {
   fmt.Println(p.Primes)
 }
 ```
+
+## primefactorization - Calculate the Prime Factorization
+
+```go
+package main
+import (
+  "fmt"
+  "github.com/mathyourlife/lt3maths/primefactorization"
+)
+func main() {
+  pf := primefactorization.NewPrimeFactorization()
+  result := pf.Of(12)
+  fmt.Println(result)
+  // map[2:2 3:1]
+}
+```
