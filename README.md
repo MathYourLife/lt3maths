@@ -39,3 +39,24 @@ func main() {
   // map[2:2 3:1]
 }
 ```
+
+## lexperm - Lexicographic Permutation Generator
+
+```go
+package main
+import(
+  "fmt"
+  "github.com/mathyourlife/lt3maths/lexperm"
+)
+func main () {
+  lp := lexperm.LexPerm{}
+  a := []int{0, 1, 2}
+  for {
+    fmt.Println(a)
+    more := lp.Next(a)
+    if !more {
+      break
+    }
+  }
+}
+```
